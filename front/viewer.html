@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link href="//fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+</head>
+<body>
+
+<div class="label logo">
+	<div class="live">
+		<div class="header">Player in matchmaking!</div>
+		<div class="live_score">
+			<span>16</span>:<span>16</span>
+		</div>
+		<div class="right">
+			<div class="live_time">15 minutes</div>
+			<div class="live_map">de_inferno</div>
+		</div>
+		<div class="bg"></div>
+	</div>
+</div>
+
+<div class="panel viewer_block">
+	<div class="close_button"><i class="fa fa-times"></i></div>
+	<div class="left animated">
+		<div class="avatar">
+			<div class="border"></div>
+			<div class="image"></div>
+		</div>
+		<div class="text-center">
+			<div class="nick"></div>
+		</div>
+		<div class="row">
+			<div class="column2 timebars-comp">
+				<div class="bar">
+					<div class="hero"></div>
+					<div class="progress-bar" style="width:0%"></div>
+				</div>
+				<div class="bar">
+					<div class="hero"></div>
+					<div class="progress-bar" style="width:0%"></div>
+				</div>
+				<div class="bar">
+					<div class="hero"></div>
+					<div class="progress-bar" style="width:0%"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="information animated">
+		<div class="column">
+			<div class="header">Main info</div>
+			<table class="comp_table">
+				<tr>
+					<td>Kills</td>
+					<td class="kills"></td>
+				</tr>
+				<tr>
+					<td>Deaths</td>
+					<td class="deaths"></td>
+				</tr>
+				<tr>
+					<td>Time played</td>
+					<td class="time"></td>
+				</tr>
+				<tr>
+					<td>Planted/Defused</td>
+					<td class="bombs"></td>
+				</tr>
+				<tr>
+					<td>Wins</td>
+					<td class="wins"></td>
+				</tr>
+				<tr>
+					<td>Damage</td>
+					<td class="dmg"></td>
+				</tr>
+				<tr>
+					<td>Headshots</td>
+					<td class="headshots_p"></td>
+				</tr>
+				<tr>
+					<td>Favorite map</td>
+					<td class="map"></td>
+				</tr>
+			</table>
+		</div>
+		<button class="btn btn-primary icon-background next go_to_more_button">More</button>
+	</div>
+	<div class="copyrights">by CSGO-Analytics.ru data</div>
+</div>
+
+<div class="big_data">
+	<div class="close_button"><i class="fa fa-times"></i></div>
+	<div class="column maps animated">
+		<table class="map">
+			<tr>
+				<td>
+					<span class="map_name"></span>
+				</td>
+				<td>
+					<span class="map_wins"><b></b> <i class="fa fa-trophy"></i></span>
+				</td>
+			</tr>
+			<tr class="table">
+				<td colspan="2">
+					<table>
+						<tr>
+							<td>Rounds plays</td>
+							<td class="rounds_plays"></td>
+						</tr>
+						<tr>
+							<td>Rounds win</td>
+							<td class="rounds_win"></td>
+						</tr>
+						<tr>
+							<td>Winrate</td>
+							<td class="map_winrate"></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+		<table class="map">
+			<tr>
+				<td>
+					<span class="map_name"></span>
+				</td>
+				<td>
+					<span class="map_wins"><b></b> <i class="fa fa-trophy"></i></span>
+				</td>
+			</tr>
+			<tr class="table">
+				<td colspan="2">
+					<table>
+						<tr>
+							<td>Rounds plays</td>
+							<td class="rounds_plays"></td>
+						</tr>
+						<tr>
+							<td>Rounds win</td>
+							<td class="rounds_win"></td>
+						</tr>
+						<tr>
+							<td>Winrate</td>
+							<td class="map_winrate"></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+		<table class="map">
+			<tr>
+				<td>
+					<span class="map_name"></span>
+				</td>
+				<td>
+					<span class="map_wins"><b></b> <i class="fa fa-trophy"></i></span>
+				</td>
+			</tr>
+			<tr class="table">
+				<td colspan="2">
+					<table>
+						<tr>
+							<td>Rounds plays</td>
+							<td class="rounds_plays"></td>
+						</tr>
+						<tr>
+							<td>Rounds win</td>
+							<td class="rounds_win"></td>
+						</tr>
+						<tr>
+							<td>Winrate</td>
+							<td class="map_winrate"></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+	</div>
+	<div class="column animated">
+		<table class="weapon">
+			<tr>
+				<td>
+					<span class="weapon_name"></span>
+				</td>
+				<td>
+					<span class="weapon_kills"><b></b> <i class="fa fa-crosshairs"></i></span>
+				</td>
+			</tr>
+			<tr class="table">
+				<td colspan="2">
+					<table>
+						<tr>
+							<td>Shots</td>
+							<td class="weapon_shots"></td>
+						</tr>
+						<tr>
+							<td>Accuracy</td>
+							<td class="weapon_acc"></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+		<table class="weapon">
+			<tr>
+				<td>
+					<span class="weapon_name"></span>
+				</td>
+				<td>
+					<span class="weapon_kills"><b></b> <i class="fa fa-crosshairs"></i></span>
+				</td>
+			</tr>
+			<tr class="table">
+				<td colspan="2">
+					<table>
+						<tr>
+							<td>Shots</td>
+							<td class="weapon_shots"></td>
+						</tr>
+						<tr>
+							<td>Accuracy</td>
+							<td class="weapon_acc"></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+		<table class="weapon">
+			<tr>
+				<td>
+					<span class="weapon_name"></span>
+				</td>
+				<td>
+					<span class="weapon_kills"><b></b> <i class="fa fa-crosshairs"></i></span>
+				</td>
+			</tr>
+			<tr class="table">
+				<td colspan="2">
+					<table>
+						<tr>
+							<td>Shots</td>
+							<td class="weapon_shots"></td>
+						</tr>
+						<tr>
+							<td>Accuracy</td>
+							<td class="weapon_acc"></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+		<table class="weapon">
+			<tr>
+				<td>
+					<span class="weapon_name"></span>
+				</td>
+				<td>
+					<span class="weapon_kills"><b></b> <i class="fa fa-crosshairs"></i></span>
+				</td>
+			</tr>
+			<tr class="table">
+				<td colspan="2">
+					<table>
+						<tr>
+							<td>Shots</td>
+							<td class="weapon_shots"></td>
+						</tr>
+						<tr>
+							<td>Accuracy</td>
+							<td class="weapon_acc"></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+	</div>
+	<div class="column animated">
+		<table class="stats">
+			<tr>
+				<td colspan="2" class="header">Statistics</td>
+			</tr>
+			<tr>
+				<td>Kills</td>
+				<td class="kills"></td>
+			</tr>
+			<tr>
+				<td>Deaths</td>
+				<td class="deaths"></td>
+			</tr>
+			<tr>
+				<td>K/D</td>
+				<td class="kd"></td>
+			</tr>
+			<tr>
+				<td>Shots</td>
+				<td class="shots"></td>
+			</tr>
+			<tr>
+				<td>Hits</td>
+				<td class="hits"></td>
+			</tr>
+			<tr>
+				<td>Accuracy</td>
+				<td class="accuracy"></td>
+			</tr>
+			<tr>
+				<td>Headshots</td>
+				<td class="headshots"></td>
+			</tr>
+			<tr>
+				<td>Headshots %</td>
+				<td class="headshots_p"></td>
+			</tr>
+			<tr>
+				<td>MVPs</td>
+				<td class="mvps"></td>
+			</tr>
+			<tr>
+				<td>Time played</td>
+				<td class="time"></td>
+			</tr>
+			<tr>
+				<td>Winrate</td>
+				<td class="winrate"></td>
+			</tr>
+			<tr>
+				<td>Matches</td>
+				<td class="matches_played"></td>
+			</tr>
+			<tr>
+				<td>Matches won</td>
+				<td class="matches_won"></td>
+			</tr>
+			<tr>
+				<td>Achivments</td>
+				<td class="achievements"></td>
+			</tr>
+		</table>
+	</div>
+	<div class="copyrights">by CSGO-Analytics.ru data</div>
+</div>
+
+<script src="https://extension-files.twitch.tv/helper/v1/twitch-ext.min.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/viewer.js"></script>
+<script>
+twitch_id = '43472465';
+$.ajax({
+	url: 'https://csgo-analytics.ru/twitch_extension/back/get_steamid.php',
+	type: 'POST',
+	dataType: 'json',
+	data: {twitch_id: twitch_id}
+})
+.always(function(data) {
+	steamid = data.result;
+	updateStats(steamid);
+	updateLiveMode();
+	intervalLiveUpdater = setInterval(updateLiveMode, 30000);
+});
+
+console.log(steamid);
+console.log(twitch_id);
+</script>
+
+</body>
+</html>
